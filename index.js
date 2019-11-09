@@ -5,10 +5,10 @@ const {
   asyncCatPromisePending
 } = require("./asyncCat");
 
+//Ugly Option...
 async function getCatInAbadPracticeWay() {
-  const a = await asyncCatBadPractice();
-  console.log("look whos availble ...", a);
-  console.log("look whos availble in a bad way...");
+  await asyncCatBadPractice();
+  console.log("look whos availble in a bad practice...");
   // using the Exposed obj only by any promise as helper for ready ...
   console.log(exposedObj);
 }
